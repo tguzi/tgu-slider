@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#box,#box1{
+	margin:50px auto;
+	width: 500px;
+	height: 300px;
+	border: 5px solid #ccc;
+	overflow: hidden;
+	position: relative;
+}
+#box img,#box1 img{
+	float: left;
+	width: 500px;
+	height: 300px;
+	transition: all linear 0.5s;
+}
+#carousel .imgBox{
+	float: left;
+	position: absolute;
+	transition: all 0.5s linear;
+}
+#slider,#carousel{
+	width: 10000px;
+	height: 100%;
+	position: relative;
+	transition: all linear 0.5s;
+}
+.side{
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	background: #000;
+	color:#fff;
+	cursor: pointer;
+	display: none;
+}
+.side:hover{
+	opacity: 0.5;
+}
+#prevImg{
+	left: 0;
+}
+#nextImg{
+	right: 0;
+}
+#imgOrder{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -55px;
+	opacity: 0.4;
+}
+#box:hover .side,#box1:hover .side{
+	display: block;
+}
+#box:hover #imgOrder{
+	opacity: 1;
+}
+#imgOrder li{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #ccc;
+	margin: 6px;
+	float: left;
+	cursor: pointer;
+}
+
